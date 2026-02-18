@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: mystarter-service
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        namespace: mystarter
+        file-extension: yml
+        group: DEFAULT_GROUP
+      discovery:
+        server-addr: localhost:8848
+        namespace: mystarter

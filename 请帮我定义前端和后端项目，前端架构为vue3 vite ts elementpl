@@ -1,0 +1,9 @@
+请帮我定义前端和后端项目，前端架构为vue3 vite ts  elementplus 等。后端需要使用 spring 单体多模块架构（便于后续拆分为微服务），使用的框架主要为 nacos，spring cloud gateway ，redis，mapstruct，openfeign,satoken。前期想定义 2 个功能模块，一个 user，一个 product， user 需要包括后台登录，用户管理，product 即商品管理。
+
+
+前端：需要定制主题，状态管理使用 pinia，api 使用 axios，需要动态路由和权限路由，所以用户管理功能需要依赖的角色管理，权限管理等。对应的权限码和 satoken 里的对应。
+
+后端：使用 mysql 8，使用 mybatisplus，用户和商品路由分别为/user  /product。 nacos 会作为配置中心。
+整理管理，前端使用 eslint，后端使用阿里 java 开发规范。
+
+现在先不用单元测试，后续需要进行接口测试，例如基于用例的定义，采用 curl 验证返回结果。 

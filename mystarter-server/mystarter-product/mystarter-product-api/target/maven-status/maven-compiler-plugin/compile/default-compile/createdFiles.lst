@@ -1,0 +1,5 @@
+com/mystarter/product/api/dto/ProductDto.class
+com/mystarter/product/api/dto/CategoryDto.class
+com/mystarter/product/api/vo/CategorySaveVo.class
+com/mystarter/product/api/vo/ProductQueryVo.class
+com/mystarter/product/api/vo/ProductSaveVo.class

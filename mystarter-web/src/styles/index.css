@@ -1,0 +1,78 @@
+/* ========================================
+   MyStarter 全局样式
+   ======================================== */
+
+:root {
+  /* 主色 */
+  --ms-primary: #409eff;
+  --ms-primary-light: #66b1ff;
+  --ms-primary-dark: #337ecc;
+
+  /* 背景 */
+  --ms-bg-color: #f0f2f5;
+  --ms-bg-sidebar: #001529;
+  --ms-bg-header: #ffffff;
+
+  /* 文字 */
+  --ms-text-primary: #303133;
+  --ms-text-regular: #606266;
+  --ms-text-secondary: #909399;
+
+  /* 侧边栏 */
+  --ms-sidebar-width: 220px;
+  --ms-sidebar-collapsed-width: 64px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  width: 100%;
+  height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+}
+
+/* ========================================
+   滚动条样式
+   ======================================== */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #c0c4cc;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ========================================
+   过渡动画
+   ======================================== */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+/* ========================================
+   Element Plus 主题定制覆盖
+   ======================================== */
+.el-menu {
+  border-right: none !important;
+}
+
+/* ========================================
+   NProgress 样式覆盖
+   ======================================== */
+#nprogress .bar {
+  background: var(--ms-primary) !important;
+  height: 3px !important;
+}

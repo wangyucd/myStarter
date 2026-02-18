@@ -1,0 +1,9 @@
+/Users/wangyu/local/workspace/my/myStarter/mystarter-server/mystarter-common/src/main/java/com/mystarter/common/config/MyBatisPlusMetaObjectHandler.java
+/Users/wangyu/local/workspace/my/myStarter/mystarter-server/mystarter-common/src/main/java/com/mystarter/common/core/entity/BaseEntity.java
+/Users/wangyu/local/workspace/my/myStarter/mystarter-server/mystarter-common/src/main/java/com/mystarter/common/core/enums/MenuTypeEnum.java
+/Users/wangyu/local/workspace/my/myStarter/mystarter-server/mystarter-common/src/main/java/com/mystarter/common/core/enums/StatusEnum.java
+/Users/wangyu/local/workspace/my/myStarter/mystarter-server/mystarter-common/src/main/java/com/mystarter/common/core/exception/BizException.java
+/Users/wangyu/local/workspace/my/myStarter/mystarter-server/mystarter-common/src/main/java/com/mystarter/common/core/exception/GlobalExceptionHandler.java
+/Users/wangyu/local/workspace/my/myStarter/mystarter-server/mystarter-common/src/main/java/com/mystarter/common/core/page/PageQuery.java
+/Users/wangyu/local/workspace/my/myStarter/mystarter-server/mystarter-common/src/main/java/com/mystarter/common/core/page/PageResult.java
+/Users/wangyu/local/workspace/my/myStarter/mystarter-server/mystarter-common/src/main/java/com/mystarter/common/core/result/R.java
