@@ -18,13 +18,48 @@ import java.math.BigDecimal;
 @TableName("pms_product")
 public class ProductEntity extends BaseEntity {
 
+    /**
+     * 分类ID
+     */
     private Long categoryId;
+
+    /**
+     * 商品名称
+     */
     private String productName;
+
+    /**
+     * 商品编码
+     */
     private String productCode;
+
+    /**
+     * 商品描述
+     */
     private String description;
+
+    /**
+     * 价格
+     */
     private BigDecimal price;
+
+    /**
+     * 库存
+     */
     private Integer stock;
+
+    /**
+     * 封面图
+     */
     private String coverImage;
+
+    /**
+     * 状态：0-下架 1-上架
+     */
     private Integer status;
+
+    /**
+     * 排序
+     */
     private Integer sortOrder;
 }

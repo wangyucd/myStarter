@@ -1,9 +1,12 @@
+# 用户模块 - 微服务模式配置
 server:
-  port: 8080
+  port: 8081
 
 spring:
+  profiles:
+    active: microservice
   application:
-    name: mystarter-service
+    name: mystarter-user
   datasource:
     url: jdbc:mysql://localhost:3306/mystarter_db?useSSL=false&characterEncoding=utf8mb4&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
     username: root
@@ -14,6 +17,10 @@ spring:
       host: localhost
       port: 6379
       database: 0
+
+# 部署模式
+mystarter:
+  deploy-mode: microservice
 
 # MyBatis-Plus 配置
 mybatis-plus:
@@ -45,7 +52,3 @@ logging:
   level:
     com.mystarter: debug
     org.springframework.web: info
-
-# 部署模式：monolith（单体）/ microservice（微服务）
-mystarter:
-  deploy-mode: monolith

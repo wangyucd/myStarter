@@ -32,6 +32,8 @@ public class SysMenuController {
 
     /**
      * 查询菜单树
+     *
+     * @return 菜单树列表
      */
     @GetMapping("/tree")
     @SaCheckPermission("system:menu:list")
@@ -41,6 +43,9 @@ public class SysMenuController {
 
     /**
      * 保存菜单
+     *
+     * @param saveVo 菜单保存参数
+     * @return 操作结果
      */
     @PostMapping("/save")
     @SaCheckPermission("system:menu:add")
@@ -51,6 +56,9 @@ public class SysMenuController {
 
     /**
      * 删除菜单
+     *
+     * @param id 菜单ID
+     * @return 操作结果
      */
     @DeleteMapping("/{id}")
     @SaCheckPermission("system:menu:delete")

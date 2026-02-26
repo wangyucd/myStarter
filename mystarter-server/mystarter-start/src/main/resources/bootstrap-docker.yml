@@ -1,0 +1,16 @@
+# ============================================
+# Docker 环境 Nacos 配置（覆盖 bootstrap.yml）
+# 激活方式：--spring.profiles.active=docker
+# ============================================
+
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos

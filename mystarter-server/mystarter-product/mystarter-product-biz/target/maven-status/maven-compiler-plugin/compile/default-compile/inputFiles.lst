@@ -1,9 +1,0 @@
-/Users/wangyu/local/workspace/my/myStarter/mystarter-server/mystarter-product/mystarter-product-biz/src/main/java/com/mystarter/product/controller/CategoryController.java
-/Users/wangyu/local/workspace/my/myStarter/mystarter-server/mystarter-product/mystarter-product-biz/src/main/java/com/mystarter/product/controller/ProductController.java
-/Users/wangyu/local/workspace/my/myStarter/mystarter-server/mystarter-product/mystarter-product-biz/src/main/java/com/mystarter/product/entity/CategoryEntity.java
-/Users/wangyu/local/workspace/my/myStarter/mystarter-server/mystarter-product/mystarter-product-biz/src/main/java/com/mystarter/product/entity/ProductEntity.java
-/Users/wangyu/local/workspace/my/myStarter/mystarter-server/mystarter-product/mystarter-product-biz/src/main/java/com/mystarter/product/infra/CategoryMapper.java
-/Users/wangyu/local/workspace/my/myStarter/mystarter-server/mystarter-product/mystarter-product-biz/src/main/java/com/mystarter/product/infra/ProductMapper.java
-/Users/wangyu/local/workspace/my/myStarter/mystarter-server/mystarter-product/mystarter-product-biz/src/main/java/com/mystarter/product/mapper/ProductDTOMapper.java
-/Users/wangyu/local/workspace/my/myStarter/mystarter-server/mystarter-product/mystarter-product-biz/src/main/java/com/mystarter/product/service/ProductManageService.java
-/Users/wangyu/local/workspace/my/myStarter/mystarter-server/mystarter-product/mystarter-product-biz/src/main/java/com/mystarter/product/service/impl/ProductManageServiceImpl.java

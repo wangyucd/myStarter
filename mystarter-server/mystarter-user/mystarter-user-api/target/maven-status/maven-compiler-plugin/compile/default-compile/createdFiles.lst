@@ -1,9 +1,0 @@
-com/mystarter/user/api/vo/SysRoleSaveVo.class
-com/mystarter/user/api/vo/SysUserQueryVo.class
-com/mystarter/user/api/dto/SysRoleDto.class
-com/mystarter/user/api/vo/SysUserSaveVo.class
-com/mystarter/user/api/vo/LoginVo.class
-com/mystarter/user/api/dto/SysUserDto.class
-com/mystarter/user/api/vo/SysMenuSaveVo.class
-com/mystarter/user/api/dto/LoginDto.class
-com/mystarter/user/api/dto/SysMenuDto.class

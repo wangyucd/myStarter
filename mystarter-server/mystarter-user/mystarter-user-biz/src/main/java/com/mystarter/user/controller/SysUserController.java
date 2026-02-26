@@ -32,6 +32,9 @@ public class SysUserController {
 
     /**
      * 分页查询用户列表
+     *
+     * @param queryVo 用户查询参数
+     * @return 用户分页列表
      */
     @GetMapping("/page")
     @SaCheckPermission("system:user:list")
@@ -41,6 +44,9 @@ public class SysUserController {
 
     /**
      * 新增或编辑用户
+     *
+     * @param saveVo 用户保存参数
+     * @return 操作结果
      */
     @PostMapping("/save")
     @SaCheckPermission("system:user:add")
@@ -51,6 +57,9 @@ public class SysUserController {
 
     /**
      * 删除用户
+     *
+     * @param id 用户ID
+     * @return 操作结果
      */
     @DeleteMapping("/{id}")
     @SaCheckPermission("system:user:delete")

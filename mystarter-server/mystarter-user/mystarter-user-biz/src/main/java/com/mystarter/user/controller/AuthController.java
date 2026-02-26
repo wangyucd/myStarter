@@ -33,6 +33,9 @@ public class AuthController {
 
     /**
      * 登录
+     *
+     * @param loginVo 登录参数
+     * @return 登录结果（含 token 和用户信息）
      */
     @PostMapping("/login")
     public R<LoginDto> login(@Valid @RequestBody LoginVo loginVo) {
@@ -41,6 +44,8 @@ public class AuthController {
 
     /**
      * 登出
+     *
+     * @return 操作结果
      */
     @PostMapping("/logout")
     public R<Void> logout() {
@@ -50,6 +55,8 @@ public class AuthController {
 
     /**
      * 获取当前登录用户信息
+     *
+     * @return 当前登录用户信息
      */
     @GetMapping("/userInfo")
     public R<LoginDto> getUserInfo() {
@@ -58,6 +65,8 @@ public class AuthController {
 
     /**
      * 获取当前用户菜单树（用于前端动态路由）
+     *
+     * @return 当前用户的菜单树列表
      */
     @GetMapping("/menus")
     public R<List<SysMenuDto>> getUserMenus() {

@@ -15,8 +15,19 @@ import lombok.Data;
 @TableName("sys_user_role")
 public class SysUserRoleEntity {
 
+    /**
+     * 主键
+     */
     @TableId(type = IdType.AUTO)
     private Long id;
+
+    /**
+     * 用户ID
+     */
     private Long userId;
+
+    /**
+     * 角色ID
+     */
     private Long roleId;
 }

@@ -16,9 +16,28 @@ import lombok.EqualsAndHashCode;
 @TableName("pms_category")
 public class CategoryEntity extends BaseEntity {
 
+    /**
+     * 父分类ID
+     */
     private Long parentId;
+
+    /**
+     * 分类名称
+     */
     private String categoryName;
+
+    /**
+     * 图标
+     */
     private String icon;
+
+    /**
+     * 排序
+     */
     private Integer sortOrder;
+
+    /**
+     * 状态：0-禁用 1-启用
+     */
     private Integer status;
 }

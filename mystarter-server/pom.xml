@@ -146,6 +146,20 @@
         </dependencies>
     </dependencyManagement>
 
+    <profiles>
+        <!-- 单体部署（默认） -->
+        <profile>
+            <id>monolith</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <!-- 微服务部署 -->
+        <profile>
+            <id>microservice</id>
+        </profile>
+    </profiles>
+
     <build>
         <pluginManagement>
             <plugins>

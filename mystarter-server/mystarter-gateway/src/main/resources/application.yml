@@ -4,23 +4,14 @@ server:
 spring:
   application:
     name: mystarter-gateway
+  profiles:
+    active: monolith
   cloud:
     nacos:
       discovery:
         server-addr: localhost:8848
         namespace: mystarter
     gateway:
-      routes:
-        # 用户服务路由
-        - id: user-service
-          uri: http://localhost:8080
-          predicates:
-            - Path=/user/**
-        # 商品服务路由
-        - id: product-service
-          uri: http://localhost:8080
-          predicates:
-            - Path=/product/**
       # 跨域配置
       globalcors:
         cors-configurations:
@@ -39,3 +30,43 @@ sa-token:
   is-concurrent: true
   is-share: true
   token-style: uuid
+
+---
+# 单体模式路由（默认）
+spring:
+  config:
+    activate:
+      on-profile: monolith
+  cloud:
+    gateway:
+      routes:
+        # 用户服务路由（单体：指向本地 8080）
+        - id: user-service
+          uri: http://localhost:8080
+          predicates:
+            - Path=/user/**
+        # 商品服务路由（单体：指向本地 8080）
+        - id: product-service
+          uri: http://localhost:8080
+          predicates:
+            - Path=/product/**
+
+---
+# 微服务模式路由
+spring:
+  config:
+    activate:
+      on-profile: microservice
+  cloud:
+    gateway:
+      routes:
+        # 用户服务路由（微服务：通过 Nacos 负载均衡）
+        - id: user-service
+          uri: lb://mystarter-user
+          predicates:
+            - Path=/user/**
+        # 商品服务路由（微服务：通过 Nacos 负载均衡）
+        - id: product-service
+          uri: lb://mystarter-product
+          predicates:
+            - Path=/product/**

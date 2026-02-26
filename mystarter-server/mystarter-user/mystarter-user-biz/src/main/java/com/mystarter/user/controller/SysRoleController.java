@@ -32,6 +32,8 @@ public class SysRoleController {
 
     /**
      * 查询角色列表
+     *
+     * @return 角色列表
      */
     @GetMapping("/list")
     @SaCheckPermission("system:role:list")
@@ -41,6 +43,9 @@ public class SysRoleController {
 
     /**
      * 保存角色
+     *
+     * @param saveVo 角色保存参数
+     * @return 操作结果
      */
     @PostMapping("/save")
     @SaCheckPermission("system:role:add")
@@ -51,6 +56,9 @@ public class SysRoleController {
 
     /**
      * 删除角色
+     *
+     * @param id 角色ID
+     * @return 操作结果
      */
     @DeleteMapping("/{id}")
     @SaCheckPermission("system:role:delete")
