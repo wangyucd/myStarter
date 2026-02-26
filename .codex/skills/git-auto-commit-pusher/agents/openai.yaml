@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git 自动提交推送器"
+  short_description: "根据已暂存变更生成中文提交注释并自动 commit 与 push"
+  default_prompt: "使用 $git-auto-commit-pusher 基于当前仓库已暂存 diff 生成中文提交注释，并自动执行 commit 和 push。"
