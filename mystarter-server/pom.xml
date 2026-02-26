@@ -13,8 +13,8 @@
 
     <modules>
         <module>mystarter-common</module>
-        <module>mystarter-user</module>
-        <module>mystarter-product</module>
+        <module>mystart-user-service</module>
+        <module>mystart-product-service</module>
         <module>mystarter-gateway</module>
         <module>mystarter-start</module>
     </modules>
@@ -125,22 +125,22 @@
             </dependency>
             <dependency>
                 <groupId>com.mystarter</groupId>
-                <artifactId>mystarter-user-api</artifactId>
+                <artifactId>mystart-user-sdk</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.mystarter</groupId>
-                <artifactId>mystarter-user-biz</artifactId>
+                <artifactId>mystart-user-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.mystarter</groupId>
-                <artifactId>mystarter-product-api</artifactId>
+                <artifactId>mystart-product-sdk</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.mystarter</groupId>
-                <artifactId>mystarter-product-biz</artifactId>
+                <artifactId>mystart-product-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>
